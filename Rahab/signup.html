@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="Sign up.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script src = "Sign up.js"></script>
+</head>
+<body>
+	<img src = "ufanisilogo.png">
+	<center><h1>Welcome to Ufanisi School!</h1></center>
+	<center><h2>"Ufanisi wako, Furaha yetu"</h2></center>
+	<hr>
+	<p class="para1" class="move-on-hover">Ufanisi School is an online tuition service where students are able to access after-school tuition services with the best teachers and well-explained learning material in the country for free!</p><br>
+	<p class="para2" class="move-on-hover">Interested in this service? Register below</p><br>
+	<form action="insert.php" method="POST">
+		<center><h3>Registration Form</h3></center>
+		<div>
+			<label for="username">Username:</label>
+			<input type="Text" name="username" placeholder="Type in your username" id="username" required>
+		</div>
+
+		<div>
+			<label for="Firstname">First Name:</label>
+			<input type="Text" name="Firstname" placeholder="Type in your first name" id="Firstname" required>
+		</div>
+
+		<div>
+			<label for="Middlename">Middle name(s):</label>
+			<input type="Text" name="Middlename" placeholder="Type in your middle name(s)" id="Middlename" required>
+		</div>
+
+		<div>
+			<label for="Surname">Surname:</label>
+			<input type="Text" name="Surname" placeholder="Type in your last name" id="Surname" required>
+		</div>
+
+		<div>
+			<label for="Date of Birth">Date of Birth:</label>
+			<input type="date" name="dob" required="required">
+		</div>
+
+		<div>
+			<label for="Class/Form">Class/Form:</label>
+			<select id="Class/Form" name="ClassForm">			
+			<option value="class one">Class One</option>
+			<option value="class two">Class Two</option>
+			<option value="class three">Class Three</option>
+			<option value="class four">Class Four</option>
+			<option value="class five">Class Five</option>
+			<option value="class six">Class Six</option>
+			<option value="class seven">Class Seven</option>
+			<option value="class eight">Class Eight</option>
+			<option value="form one">Form One</option>
+			<option value="form two">Form Two</option>
+			<option value="form three">Form Three</option>
+			<option value="form four">Form Four</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="School">School:</label>
+					<input type="Text" name="School" placeholder="Which school do you attend?" id="School" required>
+		</div>
+		<div>
+			<label for="tuition reason">Reason for tuition:</label>
+			<textarea name="tuitionreason" id="tuitionreason"></textarea>
+		</div>
+
+		<div>
+			<label>Password:</label>
+			<input type="password" name="Password" placeholder="Enter a strong password" required>
+		</div>
+		
+		<div>
+			<label>Confirm Password: </label>
+			<input type="password" name="confirm_password" placeholder="Confirm your password" required>
+		</div>
+
+		<div class="submit_box">
+			<input type="submit" value="Register">
+		</div>
+
+		<p class="para-2">Already have an account? <a href="login.php">Login here</a></p>
+	</form>
+</body>
+</html>
+

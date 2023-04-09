@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log in</title>
+	<link rel="stylesheet" type="text/css" href="Log in.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script src = "Log in.js"></script>
+</head>
+<body>
+	<img src = "ufanisilogo.png">
+	<center><h1>Ufanisi Tuition Services!</h1></center>
+	<center><h2>"Ufanisi wako, Furaha yetu"</h2></center>
+	<hr>
+	<p class="error"><?php if (isset($error)) { echo $error; } ?></p>
+	<form action="login.php" method="POST">
+		<center><h3>Login</h3></center>
+		<div>
+			<label for="username">Username:</label>
+			<input type="Text" name="username" placeholder="Type in your username" id="username" required>
+		</div>
+
+		<div>
+			<label>Password:</label>
+			<input type="password" name="Password" placeholder="Enter a strong password" required>
+		</div>
+
+		<div class="submit_box">
+			<input type="submit" value="Login">
+		</div>
+
+		<p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+	</form>
+</body>
+</html>
